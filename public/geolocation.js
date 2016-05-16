@@ -1,28 +1,30 @@
 $(document).ready(function(){
 
-  alert("i'm working baby");
+  alert("Jquery loaded");
   var latitude;
   var longitude;
+  var temp;
+  var gamestate;
 
   if (navigator.geolocation) {
  navigator.geolocation.getCurrentPosition(function(position) {
    latitude = position.coords.latitude;
    longitude = position.coords.longitude;
 
-   $.get("https://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=744e17f268d88782dd7dfdadbfabfe5b", function(data) {
+   $.get("https://galvanize-cors-proxy.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=744e17f268d88782dd7dfdadbfabfe5b", function(data) {
      console.log(data);
      console.log(data.name);
-    var temp = data.main.temp;
+     temp = data.main.temp;
 
      console.log(temp);
      if (temp <= 273) {
-       var gamestate = "cold";
+        gamestate = "cold";
      } else if (temp > 273 && temp <= 283) {
-       var gamestate = "mild";
+        gamestate = "mild";
      } else if (temp > 283 && temp <= 293) {
-       var gamestate = "warm";
+        gamestate = "warm";
      } else {
-       var gamestate = "hot";
+        gamestate = "hot";
      }
      console.log(data.weather[0].main);
      console.log(gamestate);
