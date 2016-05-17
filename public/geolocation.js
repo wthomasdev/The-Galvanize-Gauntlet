@@ -1,10 +1,9 @@
 $(document).ready(function(){
 
-  alert("Jquery loaded");
   var latitude;
   var longitude;
   var temp;
-  var gamestate;
+  var weather;
 
   if (navigator.geolocation) {
  navigator.geolocation.getCurrentPosition(function(position) {
@@ -15,22 +14,24 @@ $(document).ready(function(){
      console.log(data);
      console.log(data.name);
      temp = data.main.temp;
+     $('div').removeClass('load');
+     $('div').append("<h1>Loaded</h1>")
 
      console.log(temp);
      if (temp <= 273) {
-        gamestate = "cold";
+        weather = "cold";
      } else if (temp > 273 && temp <= 283) {
-        gamestate = "mild";
+        weather = "mild";
      } else if (temp > 283 && temp <= 293) {
-        gamestate = "warm";
+        weather = "warm";
      } else {
-        gamestate = "hot";
+        weather = "hot";
      }
      console.log(data.weather[0].main);
-     console.log(gamestate);
+     console.log(weather);
      $('#content').append(temp);
      $('#content').append("<br>");
-     $('#content').append(gamestate);
+     $('#content').append(weather);
 
 
 
@@ -41,7 +42,7 @@ $(document).ready(function(){
 }
 
 
-
+console.log(gamestate);
 
 
 
