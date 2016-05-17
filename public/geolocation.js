@@ -10,12 +10,11 @@ $(document).ready(function(){
    latitude = position.coords.latitude;
    longitude = position.coords.longitude;
 
-   $.get("https://galvanize-cors-proxy.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=744e17f268d88782dd7dfdadbfabfe5b", function(data) {
+   $.get("https://galvanize-cors-proxy.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=744e17f268d88782dd7dfdadbfabfe5b").done(function(data) {
      console.log(data);
      console.log(data.name);
      temp = data.main.temp;
-     $('div').removeClass('load');
-     $('div').append("<h1>Loaded</h1>")
+     $('#content').removeClass('load');
 
      console.log(temp);
      if (temp <= 273) {
@@ -27,22 +26,38 @@ $(document).ready(function(){
      } else {
         weather = "hot";
      }
-     console.log(data.weather[0].main);
+    //  console.log(data.weather[0].main);
+    //  console.log(weather);
+    //  $('#content').append(temp);
+    //  $('#content').append("<br>");
+    //  $('#content').append(weather);
+
      console.log(weather);
-     $('#content').append(temp);
-     $('#content').append("<br>");
-     $('#content').append(weather);
 
 
 
+          var gameState = level1;
 
+
+       $('.my_button').click(function() {
+         var choice = $(this).attr('value');
+         gameStateName = gameState[choice];
+         gameState = window[gameStateName];
+       if (gameState === gameOver) {
+         endGame();
+       } else if (gameState === victory){
+         drawVictory();
+       }
+        else {
+           draw(gameState,weather);
+       }
+
+     });
 
  })
  });
 }
 
-
-console.log(gamestate);
 
 
 

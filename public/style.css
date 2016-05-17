@@ -15,7 +15,7 @@ main {
   color:white;
 }
 
-div {
+#content {
   padding: 5em;
   background-color: #0C0C0C;
   height:70vh;
@@ -38,11 +38,12 @@ border-radius: 25px; /* future proofing */
 }
 
 @media (max-width: 500px) {
-  div {
+  #content {
     position: absolute;
     top: 0;
     left: 0;
     height: 75vh;
     width: 50vw;
+    z-index: -1;
   }
 }
