@@ -15,6 +15,7 @@ function drawVictory() {
 }
 
 function draw(gameState,weather) {
+  
   console.log((gameState[weather]));
 }
 
@@ -23,23 +24,23 @@ var level1 = {
   image: "url",
   cold:  {
     question:"Is Danny a robot?",
-    answerA:"True",
-    answerB:"False"
+    answerA:"Yes",
+    answerB:"No"
     },
   mild:  {
-    question:"Is this correct 'var string: 'hello';?",
+    question:"Is this correct 'var string = 'hello';?",
     answerA:"Yes",
     answerB:"No"
     },
   warm:  { //variable name based on temp
-    question:"CSS stands for Color & Style Sheets",
-    answerA:"True",
-    answerB:"False"
+    question:"CSS stands for:",
+    answerA:"Cascading Style Sheets",
+    answerB:"Color & Style Sheets"
     },
   hot:  {
-    question:"The latest version of JavaScript is ES7",
-    answerA:"True",
-    answerB:"False"
+    question:"The latest version of JavaScript is:",
+    answerA:"ES6",
+    answerB:"ES7"
     },
   level: "1",
   text: "some text",
@@ -61,13 +62,13 @@ var level2 = {
     },
   warm:  {
     question:"How do you create a new file in the command line?",
-    answerA:"new file.js",
-    answerB:"touch file.js"
+    answerA:"touch file.js",
+    answerB:"new file.js"
     },
   hot:  {
     question:"What is the index number at the beginning of an array?",
-    answerA:"1",
-    answerB:"0"
+    answerA:"0",
+    answerB:"1"
     },
   level: "2",
   text: "some text",
@@ -79,18 +80,18 @@ var level3 = {
   image: "url",
   cold:  {
     question:"How do you start using flexbox?",
-    answerA:"display:flex",
-    answerB:"display:block"
+    answerA:"display:block",
+    answerB:"display:flex"
     },
   mild:  {
     question:"Is jQuery a framework or a library?",
-    answerA:"A library",
-    answerB:"A framework"
+    answerA:"A framework",
+    answerB:"A library"
     },
   warm:  {   //variable name based on temp
     question:"What does this do <i>?",
-    answerA:"Italicize",
-    answerB:"Indent"
+    answerA:"Indent",
+    answerB:"Italicize"
     },
   hot:  {
     question:"Will .shift() remove the first element of the array or the last?",
@@ -99,8 +100,8 @@ var level3 = {
     },
   level: "3",
   text: "some text",
-  choice1: "level4",
-  choice2: "gameOver"
+  choice1: "gameOver",
+  choice2: "level4"
 };
 
 // OBJECT LEVEL 4
@@ -108,13 +109,13 @@ var level4 = {
   image: "url",
   cold:  {
     question:"Who created Java?",
-    answerA:"Sun Microsystems",
-    answerB:"Oracle"
+    answerA:"Oracle",
+    answerB:"Sun Microsystems"
     },
   mild:  {
     question:"Which way is the correct way to select a div in jQuery?",
-    answerA:"$('div')",
-    answerB:"$(div)"
+    answerA:"$(div)",
+    answerB:"$('div')"
     },
   warm:  {   //variable name based on temp
     question:"Using two frameworks at once is recommended.",
@@ -128,8 +129,8 @@ var level4 = {
     },
   level: "4",
   text: "some text",
-  choice1: "level5",
-  choice2: "gameOver"
+  choice1: "gameOver",
+  choice2: "level5"
 };
 
 // OBJECT LEVEL 5
@@ -137,23 +138,23 @@ var level5 = {
   image: "url",
   cold:  {
     question:"Can you use .split() on an array?",
-    answerA:"Yes",
-    answerB:"No"
+    answerA:"No",
+    answerB:"Yes"
     },
   mild:  {
     question:"Can you use .map() on a string?",
-    answerA:"Yes",
-    answerB:"No"
+    answerA:"No",
+    answerB:"Yes"
     },
   warm:  {   //variable name based on temp
     question:"Who is the father of Computer Science?",
-    answerA:"Bill Gates",
-    answerB:"Alan Turing"
+    answerA:"Alan Turing",
+    answerB:"Bill Gates"
     },
   hot:  {
     question:"Who is Donald Knuth?",
-    answerA:"An Astronomer",
-    answerB:"A Computer Scientist"
+    answerA:"A Computer Scientist",
+    answerB:"An Astronomer"
     },
   level: "5",
   text: "some text",
@@ -166,28 +167,28 @@ var level6 = {
   image: "url",
   cold:  {
     question:"Convert this binary number '10'.",
-    answerA:"2",
-    answerB:"10"
+    answerA:"10",
+    answerB:"2"
     },
   mild:  {
     question:"What does SSL stand for?",
-    answerA:"Secure Sockets Layer",
-    answerB:"Second Secure Layer"
+    answerA:"Second Secure Layer",
+    answerB:"Secure Sockets Layer"
     },
   warm:  {   //variable name based on temp
     question:"Which stack are we learning?",
-    answerA:"MEAN stack",
-    answerB:"LAMP stack"
+    answerA:"LAMP stack",
+    answerB:"MEAN stack"
     },
   hot:  {
     question:"What is the name of Apple's programming language?",
-    answerA:"Swift",
-    answerB:"Golang"
+    answerA:"Golang",
+    answerB:"Swift"
     },
   level: "6",
   text: "some text",
-  choice1: "level7",
-  choice2: "gameOver"
+  choice1: "gameOver",
+  choice2: "level7"
 };
 
 // OBJECT LEVEL 7
@@ -215,8 +216,8 @@ var level7 = {
     },
   level: "7",
   text: "some text",
-  choice1: "level8",
-  choice2: "gameOver"
+  choice1: "gameOver",
+  choice2: "level8"
 };
 
 // OBJECT LEVEL 8
@@ -224,23 +225,23 @@ var level8 = {
   image: "url",
   cold:  {
     question:"What language is Atom written in?",
-    answerA:"C++",
-    answerB:"JavaScript"
+    answerA:"JavaScript",
+    answerB:"C++"
     },
   mild:  {
     question:"Which HTTP status code should you expect if there is a server error?",
-    answerA:"4XX",
-    answerB:"5XX"
+    answerA:"5XX",
+    answerB:"4XX"
     },
   warm:  {   //variable name based on temp
     question:"How mane columns is a grid made up of in Boostrap?",
-    answerA:"8",
-    answerB:"12"
+    answerA:"12",
+    answerB:"8"
     },
   hot:  {
     question:"What is the <ARIA>?",
-    answerA:"Javascript Function",
-    answerB:"Accessible Rich Internet Applications"
+    answerA:"Accessible Rich Internet Applications",
+    answerB:"Javascript Function"
     },
   level: "8",
   text: "some text",
