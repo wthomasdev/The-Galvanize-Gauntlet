@@ -7,28 +7,46 @@ var victory = {
 };
 
 function endGame() {
+  $('#content').empty();
   $('#content').css("background-color", "yellow");
+  $('#content').append("<h1>YOU LOSE!!!</h1>");
+  $('h1').css("color","black");
+  $('h1').css("font-size","3em");
 }
 
 function drawVictory() {
   $('#content').css("background-color", "blue");
+  $('#content').empty();
+  $('#content').append("<h1>YOU WIN!!!</h1>");
+  $('h1').css("font-size","3em");
 }
 
 function draw(gameState,weather) {
-  
-  console.log((gameState[weather]));
+  $('.question').empty();
+  $('.answerA').empty();
+  $('.answerB').empty();
+  $('#image').empty();
+  $('#logo').empty();
+  console.log(gameState.text);
+  $('#logo').append('<p id="threaten">' + gameState.text + '</p>');
+  $('#image').append('<img src=' + gameState.image + '>');
+  $('.question').append(gameState[weather].question);
+  $('.answerA').append(gameState[weather].answerA);
+  $('.answerB').append(gameState[weather].answerB);
+  console.log((gameState[weather].question));
+
 }
 
 // OBJECT LEVEL 1
 var level1 = {
-  image: "url",
+  image: "elana.png",
   cold:  {
     question:"Is Danny a robot?",
     answerA:"Yes",
     answerB:"No"
     },
   mild:  {
-    question:"Is this correct 'var string = 'hello';?",
+    question:"Is this correct:   var string = 'hello'; ?",
     answerA:"Yes",
     answerB:"No"
     },
@@ -43,13 +61,13 @@ var level1 = {
     answerB:"ES7"
     },
   level: "1",
-  text: "some text",
+  text: "How dare you challenge me?",
   choice1: "level2",
   choice2: "gameOver"
 };
 // OBJECT LEVEL 2
 var level2 = {
-  image: "url",
+  image: "elana.png",
   cold:  {     //variable name based on temp
     question:"Who created JavaScript?",
     answerA:"Brendan Eich",
@@ -71,13 +89,13 @@ var level2 = {
     answerB:"1"
     },
   level: "2",
-  text: "some text",
+  text: "Your skills are weak..",
   choice1: "level3",
   choice2: "gameOver"
 };
 // OBJECT LEVEL 3
 var level3 = {
-  image: "url",
+  image: "roberto.png",
   cold:  {
     question:"How do you start using flexbox?",
     answerA:"display:block",
@@ -99,14 +117,14 @@ var level3 = {
     answerB:"First"
     },
   level: "3",
-  text: "some text",
+  text: "Get a question wrong, and you'll end up as Iago's dinner",
   choice1: "gameOver",
   choice2: "level4"
 };
 
 // OBJECT LEVEL 4
 var level4 = {
-  image: "url",
+  image: "roberto.png",
   cold:  {
     question:"Who created Java?",
     answerA:"Oracle",
@@ -128,14 +146,14 @@ var level4 = {
     answerB:"False"
     },
   level: "4",
-  text: "some text",
+  text: "You'll never beat me!!!",
   choice1: "gameOver",
   choice2: "level5"
 };
 
 // OBJECT LEVEL 5
 var level5 = {
-  image: "url",
+  image: "danny.png",
   cold:  {
     question:"Can you use .split() on an array?",
     answerA:"No",
@@ -157,14 +175,14 @@ var level5 = {
     answerB:"An Astronomer"
     },
   level: "5",
-  text: "some text",
+  text: "Beep boop beep boop boop",
   choice1: "level6",
   choice2: "gameOver"
 };
 
 // OBJECT LEVEL 6
 var level6 = {
-  image: "url",
+  image: "danny.png",
   cold:  {
     question:"Convert this binary number '10'.",
     answerA:"10",
@@ -186,14 +204,14 @@ var level6 = {
     answerB:"Swift"
     },
   level: "6",
-  text: "some text",
+  text: "Does not compute!!",
   choice1: "gameOver",
   choice2: "level7"
 };
 
 // OBJECT LEVEL 7
 var level7 = {
-  image: "url",
+  image: "kyle.png",
   cold:  {
     question:"Is JavaScript strongly typed?",
     answerA:"Yes",
@@ -215,14 +233,14 @@ var level7 = {
     answerB:"False"
     },
   level: "7",
-  text: "some text",
+  text: "Welcome to Kingdom Kyle",
   choice1: "gameOver",
   choice2: "level8"
 };
 
 // OBJECT LEVEL 8
 var level8 = {
-  image: "url",
+  image: "kyle.png",
   cold:  {
     question:"What language is Atom written in?",
     answerA:"JavaScript",
@@ -244,7 +262,7 @@ var level8 = {
     answerB:"Javascript Function"
     },
   level: "8",
-  text: "some text",
+  text: "Let the rage consume you..",
   choice1: "victory",
   choice2: "gameOver"
 };

@@ -16,6 +16,8 @@ main {
 }
 
 #content {
+  display:flex;
+  flex-direction:column;
   padding: 5em;
   background-color: #0C0C0C;
   height:70vh;
@@ -28,7 +30,7 @@ border-radius: 25px; /* future proofing */
 #
 }
 
-.load {
+ .load {
   background-image:url(http://dribbble.s3.amazonaws.com/users/121337/screenshots/1024835/loading2.gif);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,6 +46,73 @@ border-radius: 25px; /* future proofing */
     left: 0;
     height: 75vh;
     width: 50vw;
-    z-index: -1;
   }
+}
+
+.hidden {
+  display:none;
+}
+
+#logo {
+  height:100px;
+  width:75%;
+  background-color:red;
+  padding-bottom:10px;
+}
+#image {
+  height:100px;
+  width:25%;
+  background-color:yellow;
+  padding-bottom:10px;
+}
+
+#question {
+  height:380px;
+  width:100%;
+  background-color:blue;
+}
+
+#answers {
+  height:300px;
+  width:100%;
+  background-color:orange;
+
+}
+
+#toprow {
+  display:flex;
+  flex-direction:row;
+  padding-bottom:10px;
+}
+
+p {
+  padding:50px;
+  font-size:2em;
+}
+
+#lowerhalf {
+  display:flex;
+  flex-direction:row;
+}
+
+#TEST {
+  display:flex;
+  flex-diection:row;
+  justify-content:center;
+}
+
+#buttonContainer {
+    display:flex;
+    flex-diection:row;
+    justify-content:center;
+
+}
+
+img {
+  height:100px;
+  width:100%%;
+}
+
+#threaten {
+  font-size:1em;
 }

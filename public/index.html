@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>The Galvanize Gauntlet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
 
-  <div id="content" class="load">
-    <button class="my_button" value="choice1">Choice1</button>
-    <button class="my_button" value="choice2">Choice2</button>
+        <div id="content" class="load">
+            <div id="toprow" class="hidden">
+                <div id="logo" class="hidden"></div>
+                <div id="image" class="hidden"></div>
+            </div>
 
-    
+            <div id="question" class="hidden">
+                <p class="question" </p>
+            </div>
+            <div id="lowerhalf" class="hidden">
+            <div id="answers" class="hidden">
+                <div id="TEST">
+                    <div id="containerA">
+                    <p class="answerA"></p>
+                  </div>
+                    <div id="containerB">
+                    <p class="answerB"></p>
+                  </div>
+                </div>
+                <div id="buttonContainer">
+                <button id="AnswerA" class="my_button hidden" value="choice1">Answer A</button>
+                <button id="AnswerB" class="my_button hidden" value="choice2">Answer B</button>
+
+                </div>
+
+            </div>
+<button class="start hidden">START GAME</button>
+        </div>
 
 
-  </div>
 
 
-</main>
-
-
+    </main>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-  <script type="text/javascript" src="levels.js"></script>
-  <script type="text/javascript" src="geolocation.js"></script>
-  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="levels.js"></script>
+    <script type="text/javascript" src="geolocation.js"></script>
+</body>
+
 </html>

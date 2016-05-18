@@ -15,6 +15,9 @@ $(document).ready(function(){
      console.log(data.name);
      temp = data.main.temp;
      $('#content').removeClass('load');
+     $('.start').removeClass('hidden');
+     $('div').removeClass('hidden');
+     $('button').removeClass('hidden');
 
      console.log(temp);
      if (temp <= 273) {
@@ -36,7 +39,12 @@ $(document).ready(function(){
 
 
 
+
           var gameState = level1;
+
+      $('.start').click(function() {
+        draw(gameState,weather);
+      })
 
 
        $('.my_button').click(function() {
