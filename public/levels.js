@@ -27,7 +27,6 @@ function draw(gameState,weather) {
   $('.answerB').empty();
   $('#image').empty();
   $('#logo').empty();
-  console.log(gameState.text);
   $('#logo').append('<p id="threaten">' + gameState.text + '</p>');
   $('#image').append('<img src=' + gameState.image + '>');
   $('.question').append(gameState[weather].question);

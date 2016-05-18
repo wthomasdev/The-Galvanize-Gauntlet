@@ -1,5 +1,5 @@
 
-
+/* background first div */
 main {
  background: url(http://galvanize-wp.s3.amazonaws.com/wp-content/uploads/2015/03/30210650/Platte-Oct-2015-4593.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -14,11 +14,10 @@ main {
   align-items: center;
   color:white;
 }
-
+/* All game content will be displayed in this div */
 #content {
   display:flex;
   flex-direction:column;
-  padding: 5em;
   background-color: #121212;
   height:70vh;
   width:50vh;
@@ -29,7 +28,7 @@ border-radius: 25px; /* future proofing */
 -khtml-border-radius: 10px; /* for old Konqueror browsers */
 #
 }
-
+/* This is the loading gif that is a class on #content */
  .load {
   background-image:url(http://dribbble.s3.amazonaws.com/users/121337/screenshots/1024835/loading2.gif);
   -webkit-background-size: cover;
@@ -38,42 +37,43 @@ border-radius: 25px; /* future proofing */
   background-size: cover;
    background-position: center;
 }
-
+/* media query needs fixing so that it works with all devices */
 @media (max-width: 500px) {
-  #content {
+
+  section {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 75vh;
-    width: 50vw;
+    top: 10vh;
+    left: 0.5vh;
+    height: 100vh;
+    width: 100%;
   }
 }
-
+/* class that i use to manage what content is displayed on screen */
 .hidden {
   display:none;
 }
 
 #logo {
-  height:100px;
-  width:75%;
+  height:10vh;
+  width:50%;
   background-color:red;
-  padding-bottom:10px;
+
 }
 #image {
-  height:100px;
-  width:25%;
+  height:10vh;
+  width:100%;
   background-color:yellow;
-  padding-bottom:10px;
+
 }
 
 #question {
-  height:380px;
+  height:25vh;
   width:100%;
   background-color:blue;
 }
 
 #answers {
-  height:300px;
+  height:25vh;
   width:100%;
   background-color:orange;
 
@@ -82,12 +82,10 @@ border-radius: 25px; /* future proofing */
 #toprow {
   display:flex;
   flex-direction:row;
-  padding-bottom:10px;
 }
 
 p {
-  padding:50px;
-  font-size:2em;
+  font-size:1.3em;
 }
 
 #lowerhalf {
@@ -105,16 +103,18 @@ p {
     display:flex;
     flex-diection:row;
     justify-content:center;
-
+    padding:2vh;
 }
 
 img {
-  height:100px;
-  width:100%%;
+  height:10vh;
+  width:100%;
 }
 
 #threaten {
   font-size:1em;
+  padding-left:1vw;
+  padding-top:1vh
 }
 
 #splashScreen {
@@ -130,7 +130,7 @@ img {
   background-color: #121212;
     color: white;
     border: 2px solid #121212;
-    font-size:3em;
+    font-size:2em;
     margin-top:20vh;
 
 }
@@ -142,9 +142,19 @@ img {
 
 #instructionsContent {
   color:white;
-  font-size:2em;
+  font-size:1em;
 }
 
 iframe {
   display:none;
+}
+
+#buttonDiv {
+  height:10vh;
+  width:100%;
+}
+
+.myButton {
+  background-color:blue;
+  color:white;
 }

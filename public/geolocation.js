@@ -53,12 +53,12 @@ $(document).ready(function(){
           $('#splashScreen').remove();
           $('#splashSegment').empty();
           $('div').fadeIn(500);
-          $('.my_button').fadeIn(500);
+          $('.myButton').fadeIn(500);
         draw(gameState,weather);
       })
 
 
-       $('.my_button').click(function() {
+       $('.myButton').click(function() {
          var choice = $(this).attr('value');
          gameStateName = gameState[choice];
          gameState = window[gameStateName];
