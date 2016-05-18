@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 
      $('#content').removeClass('load');
+     $('#content').append('<iframe width="420" height="315" src="https://www.youtube.com/embed/BSFy8N-2CDo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
       $('#splashScreen').removeClass('hidden');
       $('.noStyle').fadeIn(2000);
      $('.start').removeClass('hidden');

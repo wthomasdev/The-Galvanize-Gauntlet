@@ -107,9 +107,9 @@ var level3 = {
     answerB:"A library"
     },
   warm:  {   //variable name based on temp
-    question:"What does this do <i>?",
-    answerA:"Indent",
-    answerB:"Italicize"
+    question:"How many arguments does .pop() take?",
+    answerA:"1",
+    answerB:"0"
     },
   hot:  {
     question:"Will .shift() remove the first element of the array or the last?",
@@ -233,7 +233,7 @@ var level7 = {
     answerB:"False"
     },
   level: "7",
-  text: "Welcome to Kingdom Kyle",
+  text: "Welcome to Kingdom Kyle..let's see if you survive",
   choice1: "gameOver",
   choice2: "level8"
 };
@@ -257,12 +257,12 @@ var level8 = {
     answerB:"8"
     },
   hot:  {
-    question:"What is the <ARIA>?",
+    question:"What is the &lt;ARIA&gt;?",
     answerA:"Accessible Rich Internet Applications",
     answerB:"Javascript Function"
     },
   level: "8",
-  text: "Let the rage consume you..",
+  text: "You'll never make a programmer unless you can defeat me!",
   choice1: "victory",
   choice2: "gameOver"
 };

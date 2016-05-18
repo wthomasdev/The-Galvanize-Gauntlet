@@ -8,3 +8,10 @@ $('#topButton').click(function(){
 
 
 });
+
+$('#audio').click(function(){
+  $('iframe').remove();
+  $('#audio').text("AUDIO OFF");
+
+
+})
