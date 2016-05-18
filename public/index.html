@@ -11,7 +11,19 @@
 <body>
     <main>
 
-        <div id="content" class="load">
+
+      <div id="content" class="load">
+        <div id="splashScreen" class="hidden">
+            <div class="splashSegement"></div>
+                <button id="topButton" class="instructions noStyle hidden">INSTRUCTIONS</button>
+                <div id="instructionsText"><p id="instructionsContent" class="hidden">This is a quizz app to test your programming knowledge. Read the questions and answer either A or B to progress through the game. There are 8 levels that will get progressively harder. Choosing a wrong answer will cause you to lose, so be careful.</p> </div>
+            <div class="splashSegement">
+              <button class="start noStyle hidden">START GAME</button>
+            </div>
+            <div class="splashSegement">
+              <button class="audio noStyle hidden">AUDIO</button>
+            </div>
+         </div>
             <div id="toprow" class="hidden">
                 <div id="logo" class="hidden"></div>
                 <div id="image" class="hidden"></div>
@@ -37,7 +49,7 @@
                 </div>
 
             </div>
-<button class="start hidden">START GAME</button>
+
         </div>
 
 
@@ -50,7 +62,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
+    <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript" src="levels.js"></script>
     <script type="text/javascript" src="geolocation.js"></script>
 </body>

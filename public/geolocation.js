@@ -14,10 +14,14 @@ $(document).ready(function(){
      console.log(data);
      console.log(data.name);
      temp = data.main.temp;
+
+
      $('#content').removeClass('load');
+      $('#splashScreen').removeClass('hidden');
+      $('.noStyle').fadeIn(2000);
      $('.start').removeClass('hidden');
-     $('div').removeClass('hidden');
-     $('button').removeClass('hidden');
+    //  $('div').removeClass('hidden');
+    //  $('button').removeClass('hidden');
 
      console.log(temp);
      if (temp <= 273) {
@@ -43,6 +47,12 @@ $(document).ready(function(){
           var gameState = level1;
 
       $('.start').click(function() {
+          $('.noStyle').hide();
+          $('#instructionsContent').hide();
+          $('#splashScreen').remove();
+          $('#splashSegment').empty();
+          $('div').fadeIn(500);
+          $('.my_button').fadeIn(500);
         draw(gameState,weather);
       })
 

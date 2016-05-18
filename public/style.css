@@ -19,7 +19,7 @@ main {
   display:flex;
   flex-direction:column;
   padding: 5em;
-  background-color: #0C0C0C;
+  background-color: #121212;
   height:70vh;
   width:50vh;
   border:15px solid white;
@@ -115,4 +115,32 @@ img {
 
 #threaten {
   font-size:1em;
+}
+
+#splashScreen {
+  height:70vh;
+  width:50vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.noStyle {
+  background-color: #121212;
+    color: white;
+    border: 2px solid #121212;
+    font-size:3em;
+    margin-top:20vh;
+
+}
+
+#topButton {
+  margin-top:0;
+}
+
+
+#instructionsContent {
+  color:white;
+  font-size:2em;
 }
