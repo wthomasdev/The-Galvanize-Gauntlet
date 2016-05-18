@@ -261,7 +261,7 @@ var level8 = {
     answerB:"Javascript Function"
     },
   level: "8",
-  text: "You'll never make a programmer unless you can defeat me!",
+  text: "You'll never be a programmer if you can't defeat me!",
   choice1: "victory",
   choice2: "gameOver"
 };

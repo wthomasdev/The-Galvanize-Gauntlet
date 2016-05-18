@@ -47,6 +47,9 @@ border-radius: 25px; /* future proofing */
     height: 100vh;
     width: 100%;
   }
+  #AnswerA {
+    margin-left:8.5vw;
+  }
 }
 /* class that i use to manage what content is displayed on screen */
 .hidden {
@@ -61,7 +64,7 @@ border-radius: 25px; /* future proofing */
 }
 #image {
   height:10vh;
-  width:100%;
+  width:50%;
   background-color:yellow;
 
 }
@@ -70,12 +73,13 @@ border-radius: 25px; /* future proofing */
   height:25vh;
   width:100%;
   background-color:blue;
+  font-size:1.5em;
+  text-align: center;
 }
 
 #answers {
   height:25vh;
   width:100%;
-  background-color:orange;
 
 }
 
@@ -84,9 +88,7 @@ border-radius: 25px; /* future proofing */
   flex-direction:row;
 }
 
-p {
-  font-size:1.3em;
-}
+
 
 #lowerhalf {
   display:flex;
@@ -96,7 +98,7 @@ p {
 #TEST {
   display:flex;
   flex-diection:row;
-  justify-content:center;
+  justify-content:space-around;
 }
 
 #buttonContainer {
@@ -112,7 +114,7 @@ img {
 }
 
 #threaten {
-  font-size:1em;
+  font-size:1rem;
   padding-left:1vw;
   padding-top:1vh
 }
@@ -142,7 +144,7 @@ img {
 
 #instructionsContent {
   color:white;
-  font-size:1em;
+  font-size:1.3em;
 }
 
 iframe {
@@ -152,9 +154,78 @@ iframe {
 #buttonDiv {
   height:10vh;
   width:100%;
+  border-top:2px solid grey;
 }
 
 .myButton {
-  background-color:blue;
-  color:white;
+  	-moz-box-shadow: 3px 4px 0px 0px #3d8728;
+  	-webkit-box-shadow: 3px 4px 0px 0px #3d8728;
+  	box-shadow: 3px 4px 0px 0px #3d8728;
+  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+  	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+  	background-color:#44c767;
+  	-moz-border-radius:18px;
+  	-webkit-border-radius:18px;
+  	border-radius:18px;
+  	border:1px solid #18ab29;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:0.8em;
+  	padding:7px 25px;
+    margin-left:2vw;
+    margin-top:0.5vh;
+  	text-decoration:none;
+  	text-shadow:0px 1px 0px #2f6627;
+    height:8vh;
+    width:40%;
+  }
+  .myButton:hover {
+  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+  	background:-moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  	background:-webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  	background:-o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  	background:-ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+  	background-color:#5cbf2a;
+  }
+  .myButton:active {
+  	position:relative;
+  	top:1px;
+  }
+
+
+
+
+p {
+  padding:1em;
+  font-size:1.5em;
+}
+
+#containerA {
+  border-right:2px solid grey;
+  width:50%;
+  height:25vh;
+}
+#containerB {
+  border-left:2px solid grey;
+  width:50%;
+  height:25vh;
+}
+.answerA {
+  text-align:center;
+}
+.answerB {
+  text-align:center;
+}
+
+#AnswerB {
+  margin-left:3vh;
 }
