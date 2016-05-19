@@ -9,16 +9,13 @@ var victory = {
 function endGame() {
   $('#content').empty();
   $('#content').addClass('gameOver');
-  // $('#content').append("<h1>YOU LOSE!!!</h1>");
-  // $('h1').css("color","black");
-  // $('h1').css("font-size","3em");
+  $('#content').addClass('shake-crazy');
 }
 
 function drawVictory() {
   $('#content').empty();
   $('#content').addClass('win');
-  // $('#content').append("<h1>YOU WIN!!!</h1>");
-  // $('h1').css("font-size","3em");
+  $('#content').addClass('rotate');
 }
 
 function hardCore() {

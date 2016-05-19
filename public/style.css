@@ -303,3 +303,21 @@ p {
 #instructionsContent {
   font-size:0.6rem;
 }
+/* ON WIN */
+.rotate {
+-webkit-animation: cssAnimation 1.3959s 16 ease-in-out;
+-moz-animation: cssAnimation 1.3959s 16 ease-in-out;
+-o-animation: cssAnimation 1.3959s 16 ease-in-out;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
