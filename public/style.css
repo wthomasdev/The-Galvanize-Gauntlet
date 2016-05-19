@@ -1,4 +1,6 @@
-
+html {
+  font-size:2vw;
+}
 /* background first div */
 main {
  background: url(http://galvanize-wp.s3.amazonaws.com/wp-content/uploads/2015/03/30210650/Platte-Oct-2015-4593.jpg) no-repeat center center fixed;
@@ -69,6 +71,13 @@ border-radius: 25px; /* future proofing */
 /* media query needs fixing so that it works with all devices */
 @media (max-width: 500px) {
 
+  html {
+    font-size:4vw;
+  }
+  #threaten {
+    font-size:0.6rem;
+  }
+
   section {
     position: absolute;
     top: 10vh;
@@ -76,8 +85,13 @@ border-radius: 25px; /* future proofing */
     height: 100vh;
     width: 100%;
   }
-  #AnswerA {
-    margin-left:8.5vw;
+
+  .myButton {
+    font-size:0.2rem;
+    height:1.5vh;
+    width:25%;
+    margin-left:1.5vw;
+    padding:0px;
   }
 }
 /* class that i use to manage what content is displayed on screen */
@@ -99,7 +113,7 @@ border-radius: 25px; /* future proofing */
 #question {
   height:25vh;
   width:100%;
-  font-size:1.5em;
+  font-size:0.2rem;
   text-align: center;
   border-bottom:2px solid grey;
   border-top:2px solid grey;
@@ -108,6 +122,7 @@ border-radius: 25px; /* future proofing */
 #answers {
   height:25vh;
   width:100%;
+  font-size:0.2rem;
 
 }
 
@@ -142,7 +157,7 @@ img {
 }
 
 #threaten {
-  font-size:1rem;
+  font-size:0.4rem;
   padding-left:1vw;
   padding-top:1vh
 }
@@ -167,7 +182,7 @@ img {
   background-color: #1a1a1a;
     color: white;
     border: 2px solid #1a1a1a;
-    font-size:2em;
+    font-size:0.6rem;
     margin-top:20vh;
     font-family: 'Orbitron', sans-serif;
 
@@ -178,10 +193,7 @@ img {
 }
 
 
-# {
-  color:white;
-  font-size:1.3em;
-}
+
 
 iframe {
   display:none;
@@ -213,9 +225,9 @@ iframe {
   	cursor:pointer;
   	color:#ffffff;
   	font-family: 'Orbitron', sans-serif;
-  	font-size:0.8em;
+  	font-size:0.4rem;
   	padding:7px 25px;
-    margin-left:2vw;
+    margin-left:1.8vw;
     margin-top:0.5vh;
   	text-decoration:none;
   	text-shadow:0px 1px 0px #2f6627;
@@ -241,7 +253,7 @@ li {
   font-family: 'Orbitron', sans-serif;
   list-style:none;
   padding:30px;
-  font-size:1.5rem;
+  font-size:0.6rem;
   text-align:center;
 
 }
@@ -249,7 +261,7 @@ li {
 
 p {
   padding:1em;
-  font-size:1.5em;
+  font-size:0.6rem;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -265,9 +277,11 @@ p {
 }
 .answerA {
   text-align:center;
+  font-size:0.6rem;
 }
 .answerB {
   text-align:center;
+  font-size:0.6rem;
 }
 
 #AnswerB {
@@ -281,7 +295,11 @@ p {
   font-family: 'Orbitron', sans-serif;
   margin-top:20vh;
   text-align:center;
-  font-size:1.3em;
+  font-size:0.7rem;
   padding:3vw;
 
+}
+
+#instructionsContent {
+  font-size:0.6rem;
 }
