@@ -18,9 +18,16 @@ $(document).ready(function(){
 
      $('#content').removeClass('load');
      $('#content').append('<iframe width="420" height="315" src="https://www.youtube.com/embed/BSFy8N-2CDo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
-      $('#splashScreen').removeClass('hidden');
-      $('.noStyle').fadeIn(2000);
-     $('.start').removeClass('hidden');
+      $('#whatMode').fadeIn(3000).delay(4000).fadeOut(1000);
+      $('#whatMode').empty();
+      setTimeout(function(){
+        console.log("starting now");
+        $('#whatMode').remove();
+        $('#splashScreen').removeClass('hidden');
+        $('.noStyle').fadeIn(2000);
+        $('.start').removeClass('hidden');
+      }, 5000);
+
     //  $('div').removeClass('hidden');
     //  $('button').removeClass('hidden');
 
@@ -28,15 +35,19 @@ $(document).ready(function(){
      if (temp <= 273) {
         weather = "cold";
         $('#content').css("border", "15px solid #73AAE2");
+        hardCore();
      } else if (temp > 273 && temp <= 283) {
         weather = "mild";
         $('#content').css("border", "15px solid #B5EA7F");
+        extreme();
      } else if (temp > 283 && temp <= 293) {
         weather = "warm";
         $('#content').css("border", "15px solid #E69A0E");
+        hell();
      } else {
         weather = "hot";
         $('#content').css("border", "15px solid #D72C0D");
+        traumatic();
      }
     //  console.log(data.weather[0].main);
     //  console.log(weather);

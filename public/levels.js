@@ -21,6 +21,18 @@ function drawVictory() {
   // $('h1').css("font-size","3em");
 }
 
+function hardCore() {
+  $('#whatMode').append("<h3 class='modeText'>The temperature at your location is cold so the game has been set to hardcore mode</h3>");
+}
+function extreme() {
+  $('#whatMode').append("<h3 class='modeText'>The temperature at your location is mild so the game has been set to extreme mode</h3>");
+}
+function hell(){
+  $('#whatMode').append("<h3 class='modeText'>The temperature at your location is warm so the game has been set to hell mode</h3>");
+}
+function traumatic(){
+  $('#whatMode').append("<h3 class='modeText'>The temperature at your location is hot so the game has been set to traumatic mode</h3>");
+}
 
 function draw(gameState,weather) {
   $('.question').empty();

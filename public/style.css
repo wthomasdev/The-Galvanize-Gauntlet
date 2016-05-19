@@ -101,7 +101,8 @@ border-radius: 25px; /* future proofing */
   width:100%;
   font-size:1.5em;
   text-align: center;
-  border:2px solid grey;
+  border-bottom:2px solid grey;
+  border-top:2px solid grey;
 }
 
 #answers {
@@ -153,6 +154,13 @@ img {
   flex-direction:column;
   justify-content:center;
   align-items:center;
+}
+
+#whatMode {
+  height:70vh;
+  width:50vh;
+  display:flex;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .noStyle {
@@ -264,4 +272,16 @@ p {
 
 #AnswerB {
   margin-left:3vh;
+}
+
+.modeText {
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Orbitron', sans-serif;
+  margin-top:20vh;
+  text-align:center;
+  font-size:1.3em;
+  padding:3vw;
+
 }
