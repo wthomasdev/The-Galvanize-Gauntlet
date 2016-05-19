@@ -4,7 +4,7 @@ $('#topButton').click(function(){
   setTimeout(function(){
     $('#instructionsContent').hide();
     $('.noStyle').fadeIn(1000);
-  }, 5000);
+  }, 8000);
 
 
 });

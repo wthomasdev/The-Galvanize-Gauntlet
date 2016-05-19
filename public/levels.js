@@ -21,6 +21,7 @@ function drawVictory() {
   // $('h1').css("font-size","3em");
 }
 
+
 function draw(gameState,weather) {
   $('.question').empty();
   $('.answerA').empty();
@@ -29,7 +30,7 @@ function draw(gameState,weather) {
   $('#logo').empty();
   $('#logo').append('<p id="threaten">' + gameState.text + '</p>');
   $('#image').append('<img src=' + gameState.image + '>');
-  $('.question').append(gameState[weather].question);
+  $('.question').append(gameState[weather].question).fadeIn(2000);
   $('.answerA').append(gameState[weather].answerA);
   $('.answerB').append(gameState[weather].answerB);
   console.log((gameState[weather].question));
@@ -232,7 +233,7 @@ var level7 = {
     answerB:"False"
     },
   level: "7",
-  text: "Welcome to Kingdom Kyle..let's see if you survive",
+  text: "Welcome to Kingdom Kyle... let's see if you survive",
   choice1: "gameOver",
   choice2: "level8"
 };
@@ -251,7 +252,7 @@ var level8 = {
     answerB:"4XX"
     },
   warm:  {   //variable name based on temp
-    question:"How mane columns is a grid made up of in Boostrap?",
+    question:"How many columns is a grid made up of in Boostrap?",
     answerA:"12",
     answerB:"8"
     },

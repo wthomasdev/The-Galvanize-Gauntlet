@@ -31,6 +31,8 @@ border-radius: 25px; /* future proofing */
 -khtml-border-radius: 10px; /* for old Konqueror browsers */
 #
 }
+
+
 /* This is the loading gif that is a class on #content */
 .gameOver {
   background-image:url(https://media.giphy.com/media/4KnvpOUjzOOB2/giphy.gif);
@@ -58,6 +60,11 @@ border-radius: 25px; /* future proofing */
   -o-background-size: cover;
   background-size: cover;
    background-position: center;
+}
+
+.elana {
+  background-color:F7541E;
+  display:hidden;
 }
 /* media query needs fixing so that it works with all devices */
 @media (max-width: 500px) {
@@ -163,7 +170,7 @@ img {
 }
 
 
-#instructionsContent {
+# {
   color:white;
   font-size:1.3em;
 }
@@ -222,7 +229,14 @@ iframe {
   	top:1px;
   }
 
+li {
+  font-family: 'Orbitron', sans-serif;
+  list-style:none;
+  padding:30px;
+  font-size:1.5rem;
+  text-align:center;
 
+}
 
 
 p {

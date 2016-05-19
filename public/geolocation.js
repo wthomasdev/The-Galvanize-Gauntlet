@@ -27,12 +27,16 @@ $(document).ready(function(){
      console.log(temp);
      if (temp <= 273) {
         weather = "cold";
+        $('#content').css("border", "15px solid #73AAE2");
      } else if (temp > 273 && temp <= 283) {
         weather = "mild";
+        $('#content').css("border", "15px solid #B5EA7F");
      } else if (temp > 283 && temp <= 293) {
         weather = "warm";
+        $('#content').css("border", "15px solid #E69A0E");
      } else {
         weather = "hot";
+        $('#content').css("border", "15px solid #D72C0D");
      }
     //  console.log(data.weather[0].main);
     //  console.log(weather);
