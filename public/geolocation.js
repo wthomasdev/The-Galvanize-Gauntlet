@@ -18,15 +18,21 @@ $(document).ready(function(){
 
      $('#content').removeClass('load');
      $('#content').append('<iframe width="420" height="315" src="https://www.youtube.com/embed/BSFy8N-2CDo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
-      $('#whatMode').fadeIn(3000).delay(4000).fadeOut(1000);
+      $('#welcomeScreen').removeClass('hidden');
+      $('h1').fadeIn(1000).delay(1000).fadeOut(2000);
+
+      setTimeout(function(){
+      $('#welcomeScreen').remove();
+      $('#whatMode').fadeIn(3000).delay(3000).fadeOut(1000);
       $('#whatMode').empty();
+    }, 3000);
       setTimeout(function(){
         console.log("starting now");
         $('#whatMode').remove();
         $('#splashScreen').removeClass('hidden');
         $('.noStyle').fadeIn(2000);
         $('.start').removeClass('hidden');
-      }, 5000);
+      }, 7500);
 
     //  $('div').removeClass('hidden');
     //  $('button').removeClass('hidden');
@@ -34,20 +40,28 @@ $(document).ready(function(){
      console.log(temp);
      if (temp <= 273) {
         weather = "cold";
+        setTimeout(function(){
         $('#content').css("border", "15px solid #73AAE2");
         hardCore();
+      },3000);
      } else if (temp > 273 && temp <= 283) {
         weather = "mild";
+        setTimeout(function(){
         $('#content').css("border", "15px solid #B5EA7F");
         extreme();
+        },3500);
      } else if (temp > 283 && temp <= 293) {
         weather = "warm";
+        setTimeout(function(){
         $('#content').css("border", "15px solid #E69A0E");
         hell();
+        },3500);
      } else {
         weather = "hot";
+        setTimeout(function(){
         $('#content').css("border", "15px solid #D72C0D");
         traumatic();
+      },3500);
      }
     //  console.log(data.weather[0].main);
     //  console.log(weather);

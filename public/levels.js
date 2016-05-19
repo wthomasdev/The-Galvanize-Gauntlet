@@ -9,7 +9,7 @@ var victory = {
 function endGame() {
   $('#content').empty();
   $('#content').addClass('gameOver');
-  $('#content').addClass('shake-crazy');
+  $('#content').addClass('shake');
 }
 
 function drawVictory() {
@@ -19,15 +19,19 @@ function drawVictory() {
 }
 
 function hardCore() {
+  $('#welcomeScreen').remove();
   $('#whatMode').append("<h3 class='modeText'>The temperature at your location is cold so the game has been set to hardcore mode</h3>");
 }
 function extreme() {
+  $('#welcomeScreen').remove();
   $('#whatMode').append("<h3 class='modeText'>The temperature at your location is mild so the game has been set to extreme mode</h3>");
 }
 function hell(){
+  $('#welcomeScreen').remove();
   $('#whatMode').append("<h3 class='modeText'>The temperature at your location is warm so the game has been set to hell mode</h3>");
 }
 function traumatic(){
+  $('#welcomeScreen').remove();
   $('#whatMode').append("<h3 class='modeText'>The temperature at your location is hot so the game has been set to traumatic mode</h3>");
 }
 
