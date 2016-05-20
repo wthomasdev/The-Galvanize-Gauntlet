@@ -40,7 +40,7 @@ main {
     #
 }
 
-/* This is the loading gif that is a class on #content */
+/* This secction styles the load / win / death screens for the game */
 
 .gameOver {
     background-image: url(https://media.giphy.com/media/4KnvpOUjzOOB2/giphy.gif);
@@ -66,12 +66,8 @@ main {
     background-size: cover;
     background-position: center;
 }
-.elana {
-    background-color: F7541E;
-    display: hidden;
-}
 
-/* media query needs fixing so that it works with all devices */
+/* media query changes various things so that the game is now responsive */
 
 @media (max-width: 500px) {
     html {
@@ -104,6 +100,8 @@ main {
 .hidden {
     display: none;
 }
+
+ /* These two style the threaten and image part at the top of the game */
 #logo {
     height: 10vh;
     width: 50%;
@@ -112,12 +110,15 @@ main {
     height: 10vh;
     width: 50%;
 }
+/* This is the welcome screen text */
 h1 {
     padding-top: 30vh;
     font-size: 1rem;
     font-family: 'Orbitron', sans-serif;
     padding-left: 1vw;
 }
+
+/* These two sections style how the questions and answers are displayed during the quiz */
 #question {
     height: 25vh;
     width: 100%;
@@ -131,6 +132,7 @@ h1 {
     width: 100%;
     font-size: 0.2rem;
 }
+/* Flex containers so align the questions/content on the page */
 #toprow {
     display: flex;
     flex-direction: row;
@@ -150,6 +152,7 @@ h1 {
     justify-content: center;
     padding: 2vh;
 }
+/* Top row styling for threaten text and img */
 img {
     height: 10vh;
     width: 100%;
@@ -159,6 +162,7 @@ img {
     padding-left: 1vw;
     padding-top: 1vh
 }
+/* This section styles the splash screen as well as the section that describes which mode the user is platying on */
 #splashScreen {
     height: 70vh;
     width: 50vh;
@@ -192,9 +196,11 @@ img {
 #topButton {
     margin-top: 0;
 }
+/* This sets the the youtube video playing the audio to hidden */
 iframe {
     display: none;
 }
+/* This section is concerned with the buttons that display answerA or answerB during the game */
 #buttonDiv {
     height: 10vh;
     width: 100%;
@@ -243,6 +249,8 @@ iframe {
     position: relative;
     top: 1px;
 }
+
+/* This is for the instructions text and mode text that appears on the screen */
 li {
     font-family: 'Orbitron', sans-serif;
     list-style: none;
@@ -255,6 +263,7 @@ p {
     font-size: 0.6rem;
     font-family: 'Orbitron', sans-serif;
 }
+/* This is for the two sections where the answers appear for the user to read */
 #containerA {
     border-right: 2px solid grey;
     width: 50%;
@@ -276,6 +285,7 @@ p {
 #AnswerB {
     margin-left: 3vh;
 }
+/* This is styling for the what mode am I playing? text */
 .modeText {
     flex-direction: column;
     justify-content: center;

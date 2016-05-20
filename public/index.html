@@ -14,17 +14,18 @@
 <body>
     <main>
 
-
+   <!-- All content is served up in the content section, classes are attached to it and divs appended and removed throughout the game -->
         <section id="content" class="load">
             <div id="welcomeScreen" class="hidden">
                 <h1 class="hidden"> The Galvanize Gauntlet </h1>
 
             </div>
+            <!-- This div serves up the what mode? to the content div when the class hidden is removed -->
             <div id="whatMode" class="hidden">
 
 
             </div>
-
+            <!-- This div is for the instructions/start/audio options for the user -->
             <div id="splashScreen" class="hidden">
                 <div class="splashSegement">
                     <button id="topButton" class="instructions noStyle hidden">INSTRUCTIONS</button>
@@ -45,14 +46,16 @@
                     <button id="audio" class="noStyle hidden">AUDIO ON</button>
                 </div>
             </div>
+            <!-- This div is for the threaten text and image to appear in during the game -->
             <div id="toprow" class="hidden">
                 <div id="logo" class="hidden"></div>
                 <div id="image" class="hidden"></div>
             </div>
-
+            <!-- This div is for the questions to appear in during the game -->
             <div id="question" class="hidden">
                 <p class="question"> </p>
             </div>
+            <!-- This div is for the answers to appear in during the game -->
             <div id="lowerhalf" class="hidden">
                 <div id="answers" class="hidden">
                     <div id="TEST">
@@ -69,7 +72,7 @@
 
 
             </div>
-
+            <!-- This div is for the buttons during the game -->
             <div id="buttonDiv" class="hidden">
                 <button id="AnswerA" class="myButton hidden" value="choice1">Answer A</button>
                 <button id="AnswerB" class="myButton hidden" value="choice2">Answer B</button>
