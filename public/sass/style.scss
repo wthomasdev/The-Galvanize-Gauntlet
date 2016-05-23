@@ -1,0 +1,167 @@
+@import "reset";
+@import "fonts";
+@import "mainContent";
+@import "mediaQueries";
+@import "buttons";
+@import "winScreen";
+@import "gameOver";
+
+
+.load {
+    background-image: url(http://dribbble.s3.amazonaws.com/users/121337/screenshots/1024835/loading2.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* class that i use to manage what content is displayed on screen */
+
+.hidden {
+    display: none;
+}
+
+ /* These two style the threaten and image part at the top of the game */
+#logo {
+    height: 10vh;
+    width: 50%;
+}
+#image {
+    height: 10vh;
+    width: 50%;
+}
+/* This is the welcome screen text */
+h1 {
+    padding-top: 30vh;
+    font-size: 1rem;
+    padding-left: 1vw;
+}
+
+/* These two sections style how the questions and answers are displayed during the quiz */
+#question {
+    height: 25vh;
+    width: 100%;
+    font-size: 0.2rem;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+}
+#answers {
+    height: 25vh;
+    width: 100%;
+    font-size: 0.2rem;
+}
+/* Flex containers so align the questions/content on the page */
+#toprow {
+    display: flex;
+    flex-direction: row;
+}
+#lowerhalf {
+    display: flex;
+    flex-direction: row;
+}
+#TEST {
+    display: flex;
+    flex-diection: row;
+    justify-content: space-around;
+}
+#buttonContainer {
+    display: flex;
+    flex-diection: row;
+    justify-content: center;
+    padding: 2vh;
+}
+/* Top row styling for threaten text and img */
+img {
+    height: 10vh;
+    width: 100%;
+}
+#threaten {
+    font-size: 0.4rem;
+    padding-left: 1vw;
+    padding-top: 1vh
+}
+/* This section styles the splash screen as well as the section that describes which mode the user is platying on */
+#splashScreen {
+    height: 70vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#whatMode {
+    height: 70vh;
+    width: 50vh;
+    display: flex;
+}
+#welcomeSreen {
+    height: 70vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noStyle {
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #1a1a1a;
+    font-size: 0.8rem;
+    margin-top: 20vh;
+
+}
+#topButton {
+    margin-top: 0;
+}
+/* This sets the the youtube video playing the audio to hidden */
+iframe {
+    display: none;
+}
+
+/* This is for the instructions text and mode text that appears on the screen */
+li {
+    list-style: none;
+    padding: 30px;
+    font-size: 0.6rem;
+    text-align: center;
+}
+p {
+    padding: 1em;
+    font-size: 0.6rem;
+}
+/* This is for the two sections where the answers appear for the user to read */
+#containerA {
+    border-right: 2px solid grey;
+    width: 50%;
+    height: 25vh;
+}
+#containerB {
+    border-left: 2px solid grey;
+    width: 50%;
+    height: 25vh;
+}
+.answerA {
+    text-align: center;
+    font-size: 0.6rem;
+}
+.answerB {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+/* This is styling for the what mode am I playing? text */
+.modeText {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 3vw;
+}
+#instructionsContent {
+    font-size: 0.6rem;
+}

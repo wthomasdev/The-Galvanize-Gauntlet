@@ -1,0 +1,27 @@
+/* media query changes various things so that the game is now responsive */
+
+@media (max-width: 500px) {
+    html {
+        font-size: 4vw;
+    }
+    #threaten {
+        font-size: 0.6rem;
+    }
+    section {
+        position: absolute;
+        top: 10vh;
+        left: 0.5vh;
+        height: 100vh;
+        width: 100%;
+    }
+    h1 {
+        margin-left: 0.98rem;
+    }
+    .myButton {
+        font-size: 0.2rem;
+        height: 1.5vh;
+        width: 25%;
+        margin-left: 1.5vw;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,50 @@
+/* This section is concerned with the buttons that display answerA or answerB during the game */
+#buttonDiv {
+    height: 10vh;
+    width: 100%;
+    border-top: 2px solid grey;
+}
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #3d8728;
+    -webkit-box-shadow: 3px 4px 0px 0px #3d8728;
+    box-shadow: 3px 4px 0px 0px #3d8728;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+    background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color: #44c767;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 0.4rem;
+    padding: 7px 25px;
+    margin-left: 1.8vw;
+    margin-top: 0.5vh;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    height: 8vh;
+    width: 40%;
+}
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+    background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#AnswerB {
+    margin-left: 3vh;
+}

@@ -1,333 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
-    font-size: 2vw;
-}
+  font-size: 2vw;
+  font-family: 'Orbitron', sans-serif; }
 
 /* background first div */
-
 main {
-    background: url(http://galvanize-wp.s3.amazonaws.com/wp-content/uploads/2015/03/30210650/Platte-Oct-2015-4593.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
+  background: url(http://galvanize-wp.s3.amazonaws.com/wp-content/uploads/2015/03/30210650/Platte-Oct-2015-4593.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
 
 /* All game content will be displayed in this div */
-
 #content {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
-    box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
-    background-color: #1a1a1a;
-    height: 70vh;
-    width: 50vh;
-    border: 15px solid white;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 25px;
-    /* future proofing */
-    -khtml-border-radius: 10px;
-    /* for old Konqueror browsers */
-    #
-}
-
-/* This secction styles the load / win / death screens for the game */
-
-.gameOver {
-    background-image: url(https://media.giphy.com/media/4KnvpOUjzOOB2/giphy.gif);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-.win {
-    background-image: url(https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-.load {
-    background-image: url(http://dribbble.s3.amazonaws.com/users/121337/screenshots/1024835/loading2.gif);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+  background-color: #1a1a1a;
+  height: 70vh;
+  width: 50vh;
+  border: 15px solid white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 25px;
+  /* future proofing */
+  -khtml-border-radius: 10px;
+  /* for old Konqueror browsers */ }
 
 /* media query changes various things so that the game is now responsive */
-
 @media (max-width: 500px) {
-    html {
-        font-size: 4vw;
-    }
-    #threaten {
-        font-size: 0.6rem;
-    }
-    section {
-        position: absolute;
-        top: 10vh;
-        left: 0.5vh;
-        height: 100vh;
-        width: 100%;
-    }
-    h1 {
-        margin-left: 0.98rem;
-    }
-    .myButton {
-        font-size: 0.2rem;
-        height: 1.5vh;
-        width: 25%;
-        margin-left: 1.5vw;
-        padding: 0px;
-    }
-}
+  html {
+    font-size: 4vw; }
+  #threaten {
+    font-size: 0.6rem; }
+  section {
+    position: absolute;
+    top: 10vh;
+    left: 0.5vh;
+    height: 100vh;
+    width: 100%; }
+  h1 {
+    margin-left: 0.98rem; }
+  .myButton {
+    font-size: 0.2rem;
+    height: 1.5vh;
+    width: 25%;
+    margin-left: 1.5vw;
+    padding: 0px; } }
+
+/* This section is concerned with the buttons that display answerA or answerB during the game */
+#buttonDiv {
+  height: 10vh;
+  width: 100%;
+  border-top: 2px solid grey; }
+
+.myButton {
+  -moz-box-shadow: 3px 4px 0px 0px #3d8728;
+  -webkit-box-shadow: 3px 4px 0px 0px #3d8728;
+  box-shadow: 3px 4px 0px 0px #3d8728;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+  background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.4rem;
+  padding: 7px 25px;
+  margin-left: 1.8vw;
+  margin-top: 0.5vh;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  height: 8vh;
+  width: 40%; }
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+  background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a; }
+
+.myButton:active {
+  position: relative;
+  top: 1px; }
+
+#AnswerB {
+  margin-left: 3vh; }
+
+.win {
+  background-image: url(https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
+/* ON WIN */
+.rotate {
+  -webkit-animation: cssAnimation 1.3959s 16 ease-in-out;
+  -moz-animation: cssAnimation 1.3959s 16 ease-in-out;
+  -o-animation: cssAnimation 1.3959s 16 ease-in-out; }
+
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+  to {
+    -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); } }
+
+@-moz-keyframes cssAnimation {
+  from {
+    -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+  to {
+    -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); } }
+
+@-o-keyframes cssAnimation {
+  from {
+    -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+  to {
+    -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); } }
+
+.gameOver {
+  background-image: url(https://media.giphy.com/media/4KnvpOUjzOOB2/giphy.gif);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
+.load {
+  background-image: url(http://dribbble.s3.amazonaws.com/users/121337/screenshots/1024835/loading2.gif);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }
 
 /* class that i use to manage what content is displayed on screen */
-
 .hidden {
-    display: none;
-}
+  display: none; }
 
- /* These two style the threaten and image part at the top of the game */
+/* These two style the threaten and image part at the top of the game */
 #logo {
-    height: 10vh;
-    width: 50%;
-}
+  height: 10vh;
+  width: 50%; }
+
 #image {
-    height: 10vh;
-    width: 50%;
-}
+  height: 10vh;
+  width: 50%; }
+
 /* This is the welcome screen text */
 h1 {
-    padding-top: 30vh;
-    font-size: 1rem;
-    font-family: 'Orbitron', sans-serif;
-    padding-left: 1vw;
-}
+  padding-top: 30vh;
+  font-size: 1rem;
+  padding-left: 1vw; }
 
 /* These two sections style how the questions and answers are displayed during the quiz */
 #question {
-    height: 25vh;
-    width: 100%;
-    font-size: 0.2rem;
-    text-align: center;
-    border-bottom: 2px solid grey;
-    border-top: 2px solid grey;
-}
+  height: 25vh;
+  width: 100%;
+  font-size: 0.2rem;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey; }
+
 #answers {
-    height: 25vh;
-    width: 100%;
-    font-size: 0.2rem;
-}
+  height: 25vh;
+  width: 100%;
+  font-size: 0.2rem; }
+
 /* Flex containers so align the questions/content on the page */
 #toprow {
-    display: flex;
-    flex-direction: row;
-}
+  display: flex;
+  flex-direction: row; }
+
 #lowerhalf {
-    display: flex;
-    flex-direction: row;
-}
+  display: flex;
+  flex-direction: row; }
+
 #TEST {
-    display: flex;
-    flex-diection: row;
-    justify-content: space-around;
-}
+  display: flex;
+  flex-diection: row;
+  justify-content: space-around; }
+
 #buttonContainer {
-    display: flex;
-    flex-diection: row;
-    justify-content: center;
-    padding: 2vh;
-}
+  display: flex;
+  flex-diection: row;
+  justify-content: center;
+  padding: 2vh; }
+
 /* Top row styling for threaten text and img */
 img {
-    height: 10vh;
-    width: 100%;
-}
+  height: 10vh;
+  width: 100%; }
+
 #threaten {
-    font-size: 0.4rem;
-    padding-left: 1vw;
-    padding-top: 1vh
-}
+  font-size: 0.4rem;
+  padding-left: 1vw;
+  padding-top: 1vh; }
+
 /* This section styles the splash screen as well as the section that describes which mode the user is platying on */
 #splashScreen {
-    height: 70vh;
-    width: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  height: 70vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 #whatMode {
-    height: 70vh;
-    width: 50vh;
-    display: flex;
-    font-family: 'Orbitron', sans-serif;
-}
+  height: 70vh;
+  width: 50vh;
+  display: flex; }
+
 #welcomeSreen {
-    height: 70vh;
-    width: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  height: 70vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .noStyle {
-    background-color: #1a1a1a;
-    color: white;
-    border: 2px solid #1a1a1a;
-    font-size: 0.8rem;
-    margin-top: 20vh;
-    font-family: 'Orbitron', sans-serif;
-}
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #1a1a1a;
+  font-size: 0.8rem;
+  margin-top: 20vh; }
+
 #topButton {
-    margin-top: 0;
-}
+  margin-top: 0; }
+
 /* This sets the the youtube video playing the audio to hidden */
 iframe {
-    display: none;
-}
-/* This section is concerned with the buttons that display answerA or answerB during the game */
-#buttonDiv {
-    height: 10vh;
-    width: 100%;
-    border-top: 2px solid grey;
-}
-.myButton {
-    -moz-box-shadow: 3px 4px 0px 0px #3d8728;
-    -webkit-box-shadow: 3px 4px 0px 0px #3d8728;
-    box-shadow: 3px 4px 0px 0px #3d8728;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
-    background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-    background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-    background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-    background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a', GradientType=0);
-    background-color: #44c767;
-    -moz-border-radius: 18px;
-    -webkit-border-radius: 18px;
-    border-radius: 18px;
-    border: 1px solid #18ab29;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.4rem;
-    padding: 7px 25px;
-    margin-left: 1.8vw;
-    margin-top: 0.5vh;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
-    height: 8vh;
-    width: 40%;
-}
-.myButton:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
-    background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-    background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-    background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-    background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767', GradientType=0);
-    background-color: #5cbf2a;
-}
-.myButton:active {
-    position: relative;
-    top: 1px;
-}
+  display: none; }
 
 /* This is for the instructions text and mode text that appears on the screen */
 li {
-    font-family: 'Orbitron', sans-serif;
-    list-style: none;
-    padding: 30px;
-    font-size: 0.6rem;
-    text-align: center;
-}
+  list-style: none;
+  padding: 30px;
+  font-size: 0.6rem;
+  text-align: center; }
+
 p {
-    padding: 1em;
-    font-size: 0.6rem;
-    font-family: 'Orbitron', sans-serif;
-}
+  padding: 1em;
+  font-size: 0.6rem; }
+
 /* This is for the two sections where the answers appear for the user to read */
 #containerA {
-    border-right: 2px solid grey;
-    width: 50%;
-    height: 25vh;
-}
+  border-right: 2px solid grey;
+  width: 50%;
+  height: 25vh; }
+
 #containerB {
-    border-left: 2px solid grey;
-    width: 50%;
-    height: 25vh;
-}
+  border-left: 2px solid grey;
+  width: 50%;
+  height: 25vh; }
+
 .answerA {
-    text-align: center;
-    font-size: 0.6rem;
-}
+  text-align: center;
+  font-size: 0.6rem; }
+
 .answerB {
-    text-align: center;
-    font-size: 0.6rem;
-}
-#AnswerB {
-    margin-left: 3vh;
-}
+  text-align: center;
+  font-size: 0.6rem; }
+
 /* This is styling for the what mode am I playing? text */
 .modeText {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 20vh;
-    text-align: center;
-    font-size: 0.7rem;
-    padding: 3vw;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 3vw; }
+
 #instructionsContent {
-    font-size: 0.6rem;
-}
-
-/* ON WIN */
-
-.rotate {
-    -webkit-animation: cssAnimation 1.3959s 16 ease-in-out;
-    -moz-animation: cssAnimation 1.3959s 16 ease-in-out;
-    -o-animation: cssAnimation 1.3959s 16 ease-in-out;
-}
-@-webkit-keyframes cssAnimation {
-    from {
-        -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-    }
-    to {
-        -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
-    }
-}
-@-moz-keyframes cssAnimation {
-    from {
-        -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-    }
-    to {
-        -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
-    }
-}
-@-o-keyframes cssAnimation {
-    from {
-        -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-    }
-    to {
-        -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
-    }
-}
+  font-size: 0.6rem; }

@@ -1,0 +1,36 @@
+/* background first div */
+
+main {
+    background: url(http://galvanize-wp.s3.amazonaws.com/wp-content/uploads/2015/03/30210650/Platte-Oct-2015-4593.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* All game content will be displayed in this div */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 14px 26px 9px rgba(0, 0, 0, 0.75);
+    background-color: #1a1a1a;
+    height: 70vh;
+    width: 50vh;
+    border: 15px solid white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 25px;
+    /* future proofing */
+    -khtml-border-radius: 10px;
+    /* for old Konqueror browsers */
+}
