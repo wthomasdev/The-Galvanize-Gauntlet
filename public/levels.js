@@ -49,13 +49,12 @@ function draw(gameState, weather) {
     $('.question').append(gameState[weather].question).fadeIn(2000);
     $('.answerA').append(gameState[weather].answerA);
     $('.answerB').append(gameState[weather].answerB);
-    console.log((gameState[weather].question));
 
 }
 
 // OBJECT LEVEL 1
 var level1 = {
-    image: "elana.png",
+    image: "images/elana.png",
     cold: {
         question: "Is Danny a robot?",
         answerA: "Yes",
@@ -83,7 +82,7 @@ var level1 = {
 };
 // OBJECT LEVEL 2
 var level2 = {
-    image: "elana.png",
+    image: "images/elana.png",
     cold: { //variable name based on temp
         question: "Who created JavaScript?",
         answerA: "Brendan Eich",
@@ -111,7 +110,7 @@ var level2 = {
 };
 // OBJECT LEVEL 3
 var level3 = {
-    image: "roberto.png",
+    image: "images/roberto.png",
     cold: {
         question: "How do you start using flexbox?",
         answerA: "display:block",
@@ -140,7 +139,7 @@ var level3 = {
 
 // OBJECT LEVEL 4
 var level4 = {
-    image: "roberto.png",
+    image: "images/roberto.png",
     cold: {
         question: "Who created Java?",
         answerA: "Oracle",
@@ -169,7 +168,7 @@ var level4 = {
 
 // OBJECT LEVEL 5
 var level5 = {
-    image: "danny.png",
+    image: "images/danny.png",
     cold: {
         question: "Can you use .split() on an array?",
         answerA: "No",
@@ -198,7 +197,7 @@ var level5 = {
 
 // OBJECT LEVEL 6
 var level6 = {
-    image: "danny.png",
+    image: "images/danny.png",
     cold: {
         question: "Convert this binary number '10'.",
         answerA: "10",
@@ -227,7 +226,7 @@ var level6 = {
 
 // OBJECT LEVEL 7
 var level7 = {
-    image: "kyle.png",
+    image: "images/kyle.png",
     cold: {
         question: "Is JavaScript strongly typed?",
         answerA: "Yes",
@@ -256,7 +255,7 @@ var level7 = {
 
 // OBJECT LEVEL 8
 var level8 = {
-    image: "kyle.png",
+    image: "images/kyle.png",
     cold: {
         question: "What language is Atom written in?",
         answerA: "JavaScript",

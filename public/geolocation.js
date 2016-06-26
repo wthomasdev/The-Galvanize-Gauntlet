@@ -1,9 +1,10 @@
-$(document).ready(function() {
+var latitude;
+var longitude;
+var temp;
+var weather;
+var gameState = level1;
 
-    var latitude;
-    var longitude;
-    var temp;
-    var weather;
+$(document).ready(function() {
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -11,11 +12,7 @@ $(document).ready(function() {
             longitude = position.coords.longitude;
 
             $.get("https://galvanize-cors-proxy.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=744e17f268d88782dd7dfdadbfabfe5b").done(function(data) {
-                console.log(data);
-                console.log(data.name);
                 temp = data.main.temp;
-
-
                 $('#content').removeClass('load');
                 $('#content').append('<iframe width="420" height="315" src="https://www.youtube.com/embed/BSFy8N-2CDo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
                 $('#welcomeScreen').removeClass('hidden');
@@ -27,17 +24,12 @@ $(document).ready(function() {
                     $('#whatMode').empty();
                 }, 3000);
                 setTimeout(function() {
-                    console.log("starting now");
                     $('#whatMode').remove();
                     $('#splashScreen').removeClass('hidden');
                     $('.noStyle').fadeIn(2000);
                     $('.start').removeClass('hidden');
                 }, 7500);
 
-                //  $('div').removeClass('hidden');
-                //  $('button').removeClass('hidden');
-
-                console.log(temp);
                 if (temp <= 273) {
                     weather = "cold";
                     setTimeout(function() {
@@ -63,51 +55,38 @@ $(document).ready(function() {
                         traumatic();
                     }, 3500);
                 }
-                //  console.log(data.weather[0].main);
-                //  console.log(weather);
-                //  $('#content').append(temp);
-                //  $('#content').append("<br>");
-                //  $('#content').append(weather);
 
-                console.log(weather);
-
-
-
-
-                var gameState = level1;
-
-                $('.start').click(function() {
-                    $('.noStyle').hide();
-                    $('#instructionsContent').hide();
-                    $('#splashScreen').remove();
-                    $('#splashSegment').empty();
-                    $('div').fadeIn(500);
-                    $('.myButton').fadeIn(500);
-                    draw(gameState, weather);
-                })
-
-
-                $('.myButton').click(function() {
-                    var choice = $(this).attr('value');
-                    gameStateName = gameState[choice];
-                    gameState = window[gameStateName];
-                    if (gameState === gameOver) {
-                        endGame();
-                    } else if (gameState === victory) {
-                        drawVictory();
-                    } else {
-                        draw(gameState, weather);
-                    }
-
-                });
-
+                startGame(gameState, weather);
+                getPlayerChoice(gameState, weather);
             })
         });
     }
-
-
-
-
-
-
 });
+
+function getPlayerChoice (gameState, weather) {
+  $('.myButton').click(function() {
+      var choice = $(this).attr('value');
+      gameStateName = gameState[choice];
+      gameState = window[gameStateName];
+      if (gameState === gameOver) {
+          endGame();
+      } else if (gameState === victory) {
+          drawVictory();
+      } else {
+          draw(gameState, weather);
+      }
+
+  });
+};
+
+function startGame (gameState, weather) {
+  $('.start').click(function() {
+      $('.noStyle').hide();
+      $('#instructionsContent').hide();
+      $('#splashScreen').remove();
+      $('#splashSegment').empty();
+      $('div').fadeIn(500);
+      $('.myButton').fadeIn(500);
+      draw(gameState, weather);
+  })
+}
