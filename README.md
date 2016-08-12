@@ -1,5 +1,7 @@
 <h1>The Galvanize Gauntlet</h1>
 
+Link to the live site: https://the-galvanize-gauntlet.firebaseapp.com/
+
 The Galvanize Gauntlet is a quiz game created with JavaScript, JQuery, HTML, CSS & SASS: 
 
 It determines the players location and feeds their longitude and latitude to a weather API in order to change the game mode.
